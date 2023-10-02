@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import './app.css'
-
-const myFunction = () => {
-    return(
-      alert('It is working')
-    );
-}
+import './WeatherApp/WeatherApp'
+import WeatherApp from "./WeatherApp/WeatherApp";
 
 export function App() {
   return (
     <>
-        <nav className="navbar bg-body-tertiary"  data-bs-theme="dark">
+    <nav className="navbar bg-body-tertiary"  data-bs-theme="dark">
       <div className="container-fluid">
         <a className="navbar-brand"><img src="../public/favicon.ico" alt="" /></a>
         <form className="d-flex" role="search">
@@ -19,18 +15,10 @@ export function App() {
         </form>
       </div>
     </nav>
-    <div className='container'>
-      <div className="box">
-        <div className="message">
-          <h1>Click To Recive Message</h1>
-        </div>
-        <div className="alert">
-        <button onClick={myFunction} type="button" className="btn btn-primary" >Alert Button</button>
-        </div>
-      </div>
-    </div>
 
+     <WeatherApp/>
     </>
+
   );
 }
 
