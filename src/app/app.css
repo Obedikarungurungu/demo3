@@ -1,0 +1,25 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(84, 0, 201, 0.9);
+    padding: 10px;
+    margin: 10px;
+    width: 10px;
+    height: 150px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.message {
+    text-align: center;
+  }
+
+.alert {
+    padding: 0;
+    margin: auto;
+    justify-content: center;
+}
