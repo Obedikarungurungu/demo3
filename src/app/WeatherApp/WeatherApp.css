@@ -1,3 +1,9 @@
+.search-icon img{
+    background-color: black;
+    padding: 10px;
+    width: 10px;
+    margin: auto;
+}
 .weather-image{
     margin-top: 29px;
     display: flex;
@@ -45,5 +51,5 @@
     font-weight: 400;
 }
 .icon {
-    margin-top: 10px;
+    margin-top: 30px;
 }
