@@ -76,8 +76,8 @@ const WeatherApp = () => {
 
 
   return (
-    <div className='container '>
-    <nav className="navbar bg-body-tertiary "  data-bs-theme="dark">
+    <div className='container'>
+    <nav className="navbar bg-body-tertiary"  data-bs-theme="dark">
       <div className="container-fluid">
         <a className="navbar-brand">WeatherApp</a>
         <form className="d-flex" role="search">
