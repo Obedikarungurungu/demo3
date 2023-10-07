@@ -2,7 +2,7 @@
     /* background-color: rgba(43,48,53,255);
     background-color: #2b3035; */
     background: rgb(43,48,53, 1);
-    background: linear-gradient(180deg, rgba(43,48,53,1) 30%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(43,48,53,1) 60%, rgba(0,0,0,1) 100%);
     font-size: 100%;
     box-sizing: border-box;
     margin: 0;

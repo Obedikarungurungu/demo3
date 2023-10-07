@@ -1,55 +1,55 @@
-.search-icon img{
-    background-color: black;
-    padding: 10px;
-    width: 10px;
-    margin: auto;
+.search-icon img {
+  background-color: black;
+  padding: 10px;
+  width: 10px;
+  margin: auto;
 }
-.weather-image{
-    margin-top: 29px;
-    display: flex;
-    justify-content: center;
+.weather-image {
+  margin-top: 29px;
+  display: flex;
+  justify-content: center;
 }
-.weather-temp{
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 120px;
-    font-weight: 400;
+.weather-temp {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 120px;
+  font-weight: 400;
 }
 .weather-icon {
-    margin-top: 29px;
-    display: flex;
-    justify-content: center;
+  margin-top: 29px;
+  display: flex;
+  justify-content: center;
 }
 
 .weather-loction {
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 60px;
-    font-weight: 400;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
 }
-.data-container{
-    margin-top: 50px;
-    color: white;
-    display: flex;
-    justify-content: center;
+.data-container {
+  margin-top: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .element {
-    margin: auto;
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
 .data {
-    font-size: 34px;
-    font-weight: 400;
+  font-size: 34px;
+  font-weight: 400;
 }
 .text {
-    font-size: 20px;
-    font-weight: 400;
+  font-size: 20px;
+  font-weight: 400;
 }
 .icon {
-    margin-top: 30px;
+  margin-top: 30px;
 }
