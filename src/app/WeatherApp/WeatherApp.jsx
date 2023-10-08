@@ -17,11 +17,13 @@ const WeatherApp = () => {
 
   const [wicon, setWicon] = useState(cloud_icon);
 
-  const search = async () => {
+  const search = async (e) => {
+    e.preventDefault();
     const element = document.getElementsByClassName('form-control');
     if (element[0].value === '') {
       return 0;
     }
+
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${api_key}`;
 
     let response = await fetch(url);
@@ -36,40 +38,33 @@ const WeatherApp = () => {
     temprature[0].innerHTML = Math.floor(data.main.temp) + '°c';
     loction[0].innerHTML = data.name;
 
-    if (data.weather[0].icon === '01d' || data.weather[0].icon === '01n') {
-      setWicon(clear_icon);
-    } else if (
-      data.weather[0].icon === '02d' ||
-      data.weather[0].icon === '02n'
-    ) {
-      setWicon(cloud_icon);
-    } else if (
-      data.weather[0].icon === '03d' ||
-      data.weather[0].icon === '03n'
-    ) {
-      setWicon(drizzle_icon);
-    } else if (
-      data.weather[0].icon === '04d' ||
-      data.weather[0].icon === '04n'
-    ) {
-      setWicon(drizzle_icon);
-    } else if (
-      data.weather[0].icon === '09d' ||
-      data.weather[0].icon === '09n'
-    ) {
-      setWicon(rain_icon);
-    } else if (
-      data.weather[0].icon === '10d' ||
-      data.weather[0].icon === '10n'
-    ) {
-      setWicon(rain_icon);
-    } else if (
-      data.weather[0].icon === '13d' ||
-      data.weather[0].icon === '13n'
-    ) {
-      setWicon(snow_icon);
-    } else {
-      setWicon(clear_icon);
+    switch (data.weather[0].icon) {
+      case '02d':
+      case '02n':
+        setWicon(clear_icon);
+        break;
+      case '03d':
+      case '03n':
+        setWicon(drizzle_icon);
+        break;
+      case '04d':
+      case '04n':
+        setWicon(drizzle_icon);
+        break;
+      case '09d':
+      case '09n':
+        setWicon(rain_icon);
+        break;
+      case '10d':
+      case '10n':
+        setWicon(rain_icon);
+        break;
+      case '13d':
+      case '13n':
+        setWicon(snow_icon);
+        break;
+      default:
+        setWicon(clear_icon);
     }
   };
 
@@ -85,14 +80,9 @@ const WeatherApp = () => {
               placeholder="Search"
               aria-label="Search"
             />
-            <div
-              className="btn btn-outline-success"
-              onClick={() => {
-                search();
-              }}
-            >
+            <button className="btn btn-outline-success" onClick={search}>
               Search
-            </div>
+            </button>
           </form>
         </div>
       </nav>
